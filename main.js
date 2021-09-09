@@ -1,9 +1,9 @@
 // Variables
 
-var affirmationSelection = getElementById('affirmation');
-var mantraSelection = getElementById('mantra');
-var messageBtn = querySelector('.message-btn');
-
+var affirmationSelection = document.getElementById('affirmation');
+var mantraSelection = document.getElementById('mantra');
+var messageBtn = document.querySelector('.message-btn');
+var message = document.querySelector('.message');
 
 // Event Listeners
 messageBtn.addEventListener("click", showMessage);
@@ -15,6 +15,8 @@ function getRandomIndex(array) {
 
 function showMessage() {
   if (affirmationSelection.checked) {
-    
+    message.innerHTML = `
+      <p>'I forgive myself and set myself free.'</p>
+    `
   }
 }
