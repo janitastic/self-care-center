@@ -15,10 +15,16 @@ function getRandomIndex(array) {
 
 function showMessage() {
   if (affirmationSelection.checked) {
-    message.innerText = affirmations[getRandomIndex(affirmations)];
+    randomAffirmation();
+  } else if (mantraSelection.checked) {
+    randomMantra();
   }
 }
 
 function randomAffirmation() {
+  message.innerText = affirmations[getRandomIndex(affirmations)];
+}
 
+function randomMantra() {
+  message.innerText = mantras[getRandomIndex(mantras)];
 }
