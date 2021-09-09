@@ -15,8 +15,10 @@ function getRandomIndex(array) {
 
 function showMessage() {
   if (affirmationSelection.checked) {
-    message.innerHTML = `
-      <p>'I forgive myself and set myself free.'</p>
-    `
+    message.innerText = affirmations[getRandomIndex(affirmations)];
   }
+}
+
+function randomAffirmation() {
+
 }
