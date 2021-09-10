@@ -32,6 +32,7 @@ h2 {
 
 .box {
   background-color: #fff;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -44,17 +45,16 @@ h2 {
   /* background-color: #fff; */
   height: 100px;
   width: 500px;
-  border-radius: 10px;
-  text-align: center;
+  margin-bottom: 10%;
 }
 
 .message {
-  /* display: grid; */
+  display: flex;
   /* background-color: #fff; */
+  margin: auto;
   height: 150px;
   width: 700px;
-  margin-top: 80px;
-  border-radius: 10px;
+  /* margin-top: 80px; */
   text-align: center;
   justify-content: center;
 }
@@ -77,4 +77,5 @@ form {
 
 img {
     height: 70px;
+    margin: auto;
 }
