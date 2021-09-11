@@ -15,30 +15,67 @@ body {
   background-attachment: fixed;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 h1,
 h2 {
   color: #fff;
   text-align: center;
 }
 
-.selection-box {
-  height: 100px;
-  width: 500px;
-  background-color: white;
+.box {
+  background-color: #fff;
   border-radius: 10px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: space-between;
 }
 
-.message-box {
+.selection {
+  /* display: grid; */
+  /* background-color: #fff; */
+  height: 100px;
+  width: 500px;
+  margin-bottom: 10%;
+}
+
+.message {
+  display: flex;
+  /* background-color: #fff; */
+  margin: auto;
   height: 150px;
   width: 700px;
-  display: grid;
-  background-color: white;
-  margin-top: 80px;
-  border-radius: 10px;
+  /* margin-top: 80px; */
   text-align: center;
+  justify-content: center;
+}
+
+.message-btn {
+  background-color: #134d71;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px 25px;
+}
+
+form {
+  /* display: grid; */
+  /* grid-template-columns: 2fr 2fr; */
+  /* grid-gap: 100px; */
+  font-style: italic;
+  padding: 20px 90px;
+  margin: 5px 0px 0px;
 }
 
 img {
     height: 70px;
+    margin: auto;
 }
