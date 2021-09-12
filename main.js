@@ -1,5 +1,4 @@
 // Variables
-
 var affirmationRadio = document.getElementById('affirmation');
 var mantraRadio = document.getElementById('mantra');
 var messageBtn = document.getElementById('submit');
@@ -12,8 +11,8 @@ var errorMessage = document.getElementById('error');
 // Event Listeners
 messageBtn.addEventListener("click", showMessage);
 clearBtn.addEventListener("click", clearMessage);
-affirmationRadio.addEventListener("click", hideErrorMessage);
-mantraRadio.addEventListener("click", hideErrorMessage);
+affirmationRadio.addEventListener("click", unCheckAffirmation);
+mantraRadio.addEventListener("click", unCheckMantra);
 
 // Functions
 function getRandomIndex(array) {
@@ -62,6 +61,12 @@ function show(element) {
   element.classList.remove('hidden')
 }
 
-function hideErrorMessage() {
-    hide(errorMessage);
+function unCheckAffirmation() {
+  hide(errorMessage);
+  mantraRadio.checked = false;
+}
+
+function unCheckMantra() {
+  hide(errorMessage);
+  affirmationRadio.checked = false;
 }
