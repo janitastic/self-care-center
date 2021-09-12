@@ -34,10 +34,7 @@ function displayMantra() {
 }
 
 function showErrorMessage() {
-  if (affirmationRadio.checked === false & mantraRadio.checked === false) {
-    message.innerHTML = `
-      <article><p class="error">Oops! Please make a selection.</p></article>
-    `
-    console.log('oops! Please make a selection.')
+  if (!affirmationRadio.checked & !mantraRadio.checked) {
+    message.innerHTML = `<p class="error">Oops! Please make a selection.</p>`
   }
 }
