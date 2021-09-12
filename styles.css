@@ -33,9 +33,9 @@ h2 {
 .box {
   background-color: #fff;
   border-radius: 10px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; */
   align-items: center;
   align-content: space-between;
 }
@@ -43,8 +43,8 @@ h2 {
 .selection {
   /* display: grid; */
   /* background-color: #fff; */
-  height: 100px;
-  width: 500px;
+  height: 60%;
+  width: 40%;
   margin-bottom: 10%;
 }
 
@@ -72,13 +72,15 @@ button {
 .message-btn {
   background-color: #134d71;
   color: #fff;
+  margin-bottom: 5%;
 }
 
 .error {
   font-style: italic;
-  font-size: 1%;
+  font-size: 75%;
   color: #ff0000;
   margin: 1%;
+  text-align: center;
 }
 
 .clear-btn {
@@ -89,15 +91,26 @@ button {
 }
 
 form {
-  /* display: grid; */
-  /* grid-template-columns: 2fr 2fr; */
-  /* grid-gap: 100px; */
+  display: grid;
+  grid-template-columns: 5% 50% 5% 50%;
+  grid-gap: 5%;
   font-style: italic;
-  padding: 20px 90px;
-  margin: 5px 0px 0px;
+  margin: 5% 20%;
+  justify-content: space-between;
 }
 
 .bell {
-    height: 70px;
-    margin: auto;
+  height: 70px;
+  margin: auto;
 }
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* .radio {
+  margin: 5%
+} */
