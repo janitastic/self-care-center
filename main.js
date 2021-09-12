@@ -23,7 +23,6 @@ function getRandomIndex(array) {
 function showMessage() {
   if (affirmationRadio.checked) {
     displayAffirmation();
-    // hideErrorMessage();
     affirmationRadio.checked = false;
   } else if (mantraRadio.checked) {
     displayMantra();
@@ -35,13 +34,11 @@ function showMessage() {
 
 function displayAffirmation() {
   messageDisplay.innerText = affirmations[getRandomIndex(affirmations)];
-  // buttonDisplay.classList.remove("hidden");
   show(buttonDisplay);
 }
 
 function displayMantra() {
   messageDisplay.innerText = mantras[getRandomIndex(mantras)];
-  // buttonDisplay.classList.remove("hidden");
   show(buttonDisplay);
 }
 
@@ -52,8 +49,7 @@ function showErrorMessage() {
 }
 
 function clearMessage() {
-  messageDisplay.innerHTML = `<img src="assets/meditate.svg" alt="Meditate bell">`;
-  // buttonDisplay.classList.add("hidden");
+  messageDisplay.innerHTML = `<img class ="bell" src="assets/meditate.svg" alt="Meditate bell">`;
   hide(buttonDisplay);
 }
 
@@ -66,12 +62,6 @@ function show(element) {
   element.classList.remove('hidden')
 }
 
-function fade(element) {
-  element.classList.toggle('hidden')
-}
-
 function hideErrorMessage() {
-  if (affirmationRadio.checked || mantraRadio.checked) {
     hide(errorMessage);
-  }
 }
