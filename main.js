@@ -6,9 +6,11 @@ var messageBtn = document.querySelector('.message-btn');
 var messageBox = document.querySelector('.message');
 var messageDisplay = document.getElementById('message-display');
 var buttonDisplay = document.getElementById('button-display');
+var clearBtn = document.getElementById('clear');
 
 // Event Listeners
 messageBtn.addEventListener("click", showMessage);
+clearBtn.addEventListener("click", clearMessage);
 
 // Functions
 function getRandomIndex(array) {
@@ -39,6 +41,11 @@ function displayMantra() {
 
 function showErrorMessage() {
   if (!affirmationRadio.checked & !mantraRadio.checked) {
-    messageBox.innerHTML = `<p class="error">Oops! Please make a selection.</p>`
+    messageBox.innerHTML = `<p class="error">Oops! Please make a selection.</p>`;
   }
+}
+
+function clearMessage() {
+  messageDisplay.innerHTML = `<img src="assets/meditate.svg" alt="Meditate bell">`;
+  buttonDisplay.classList.add("hidden");
 }
