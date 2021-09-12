@@ -20,6 +20,8 @@ function showMessage() {
   } else if (mantraRadio.checked) {
     displayMantra();
     mantraRadio.checked = false;
+  } else {
+    showErrorMessage();
   }
 }
 
@@ -29,4 +31,13 @@ function displayAffirmation() {
 
 function displayMantra() {
   message.innerText = mantras[getRandomIndex(mantras)];
+}
+
+function showErrorMessage() {
+  if (affirmationRadio.checked === false & mantraRadio.checked === false) {
+    message.innerHTML = `
+      <article><p class="error">Oops! Please make a selection.</p></article>
+    `
+    console.log('oops! Please make a selection.')
+  }
 }

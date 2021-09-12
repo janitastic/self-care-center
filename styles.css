@@ -66,6 +66,11 @@ h2 {
   padding: 2px 25px;
 }
 
+.error {
+  font-style: italic;
+  color: #ff0000;
+}
+
 form {
   /* display: grid; */
   /* grid-template-columns: 2fr 2fr; */
