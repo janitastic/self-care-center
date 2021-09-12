@@ -65,9 +65,15 @@ h2 {
 
 button {
   border-radius: 5px;
-  padding: 2px 25px;
+  padding: 1% 5%;
   border-color: transparent;
   cursor: pointer;
+  font-size: 90%;
+}
+
+button:hover {
+  background-color: #78a7c6;
+  color: #134d71;
 }
 
 .message-btn {
@@ -89,6 +95,7 @@ button {
   color: #134d71;
   text-transform: uppercase;
   margin-top: 20%;
+  padding: 10% 20%;
 }
 
 form {
