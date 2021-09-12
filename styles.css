@@ -6,6 +6,9 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+
+/* General Styling */
+
 * {
 font-family: 'Quicksand', sans-serif;
 }
@@ -30,55 +33,29 @@ h2 {
   text-align: center;
 }
 
-.box {
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: space-between;
-}
-
-.selection {
-  /* display: grid; */
-  /* background-color: #fff; */
-  height: 100px;
-  width: 500px;
-  margin-bottom: 10%;
-}
-
-.message {
-  display: flex;
-  /* background-color: #fff; */
-  margin: auto;
-  height: 150px;
-  width: 700px;
-  /* margin-top: 80px; */
-  text-align: center;
-  justify-content: center;
-}
-
 .hidden {
   display: none;
 }
 
+/* Buttons */
+
 button {
   border-radius: 5px;
-  padding: 2px 25px;
+  padding: 1% 5%;
   border-color: transparent;
+  cursor: pointer;
+  font-size: 90%;
+}
+
+button:hover {
+  background-color: #78a7c6;
+  color: #134d71;
 }
 
 .message-btn {
   background-color: #134d71;
   color: #fff;
-}
-
-.error {
-  font-style: italic;
-  font-size: 1%;
-  color: #ff0000;
-  margin: 1%;
+  margin-bottom: 5%;
 }
 
 .clear-btn {
@@ -86,18 +63,81 @@ button {
   color: #134d71;
   text-transform: uppercase;
   margin-top: 20%;
+  padding: 10% 20%;
+}
+
+/* User Selections */
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  align-content: space-between;
+}
+
+.selection {
+  height: 60%;
+  width: 40%;
+  margin-bottom: 10%;
+}
+
+.error {
+  font-style: italic;
+  font-size: 75%;
+  color: #ff0000;
+  margin: 1%;
+  text-align: center;
 }
 
 form {
-  /* display: grid; */
-  /* grid-template-columns: 2fr 2fr; */
-  /* grid-gap: 100px; */
+  display: grid;
+  grid-template-columns: 5% 50% 5% 50%;
+  grid-gap: 5%;
   font-style: italic;
-  padding: 20px 90px;
-  margin: 5px 0px 0px;
+  margin: 5% 20%;
+  justify-content: space-between;
 }
 
+.submit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* Message Box */
+
 .bell {
-    height: 70px;
-    margin: auto;
+  height: 70px;
+  margin: auto;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+  height: 80%;
+  width: 70%;
+  padding: 5%;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 2% 10%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .selection {
+    width: 60%
+  }
 }
