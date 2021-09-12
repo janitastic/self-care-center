@@ -50,13 +50,13 @@ h2 {
 
 .message {
   display: flex;
-  /* background-color: #fff; */
-  margin: auto;
-  height: 150px;
-  width: 700px;
-  /* margin-top: 80px; */
-  text-align: center;
+  flex-direction: column;
   justify-content: center;
+  margin: auto;
+  height: 80%;
+  width: 70%;
+  text-align: center;
+  padding: 5%;
 }
 
 .hidden {
@@ -67,6 +67,7 @@ button {
   border-radius: 5px;
   padding: 2px 25px;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .message-btn {
@@ -109,6 +110,10 @@ form {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+}
+
+.option {
+  font-size: 95%;
 }
 
 /* .radio {
