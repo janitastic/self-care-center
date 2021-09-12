@@ -21,10 +21,10 @@ function showMessage() {
   }
 }
 
-function randomAffirmation() {
+function displayAffirmation() {
   message.innerText = affirmations[getRandomIndex(affirmations)];
 }
 
-function randomMantra() {
+function displayMantra() {
   message.innerText = mantras[getRandomIndex(mantras)];
 }
