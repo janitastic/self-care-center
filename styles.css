@@ -76,7 +76,9 @@ button {
 
 .error {
   font-style: italic;
+  font-size: 1%;
   color: #ff0000;
+  margin: 1%;
 }
 
 .clear-btn {
