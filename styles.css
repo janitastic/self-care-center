@@ -59,6 +59,10 @@ h2 {
   justify-content: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .message-btn {
   background-color: #134d71;
   color: #fff;

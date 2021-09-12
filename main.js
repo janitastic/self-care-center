@@ -3,14 +3,16 @@
 var affirmationRadio = document.getElementById('affirmation');
 var mantraRadio = document.getElementById('mantra');
 var messageBtn = document.querySelector('.message-btn');
-var message = document.querySelector('.message');
+var messageBox = document.querySelector('.message');
+var messageDisplay = document.getElementById('message-display');
+var buttonDisplay = document.getElementById('button-display');
 
 // Event Listeners
 messageBtn.addEventListener("click", showMessage);
 
 // Functions
 function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length)
+  return Math.floor(Math.random() * array.length);
 }
 
 function showMessage() {
@@ -26,15 +28,17 @@ function showMessage() {
 }
 
 function displayAffirmation() {
-  message.innerText = affirmations[getRandomIndex(affirmations)];
+  messageDisplay.innerText = affirmations[getRandomIndex(affirmations)];
+  buttonDisplay.classList.remove("hidden");
 }
 
 function displayMantra() {
-  message.innerText = mantras[getRandomIndex(mantras)];
+  messageDisplay.innerText = mantras[getRandomIndex(mantras)];
+  buttonDisplay.classList.remove("hidden");
 }
 
 function showErrorMessage() {
   if (!affirmationRadio.checked & !mantraRadio.checked) {
-    message.innerHTML = `<p class="error">Oops! Please make a selection.</p>`
+    messageBox.innerHTML = `<p class="error">Oops! Please make a selection.</p>`
   }
 }
