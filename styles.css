@@ -63,16 +63,27 @@ h2 {
   display: none;
 }
 
+button {
+  border-radius: 5px;
+  padding: 2px 25px;
+  border-color: transparent;
+}
+
 .message-btn {
   background-color: #134d71;
   color: #fff;
-  border-radius: 5px;
-  padding: 2px 25px;
 }
 
 .error {
   font-style: italic;
   color: #ff0000;
+}
+
+.clear-btn {
+  background-color: #ccc;
+  color: #134d71;
+  text-transform: uppercase;
+  margin-top: 20%;
 }
 
 form {
