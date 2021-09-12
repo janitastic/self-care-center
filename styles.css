@@ -76,7 +76,9 @@ button {
 
 .error {
   font-style: italic;
+  font-size: 1%;
   color: #ff0000;
+  margin: 1%;
 }
 
 .clear-btn {
@@ -95,7 +97,7 @@ form {
   margin: 5px 0px 0px;
 }
 
-img {
+.bell {
     height: 70px;
     margin: auto;
 }
