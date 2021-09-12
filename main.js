@@ -2,8 +2,8 @@
 
 var affirmationRadio = document.getElementById('affirmation');
 var mantraRadio = document.getElementById('mantra');
-var messageBtn = document.querySelector('.message-btn');
-var messageBox = document.querySelector('.message');
+var messageBtn = document.getElementById('submit');
+var messageBox = document.getElementById('message-box');
 var messageDisplay = document.getElementById('message-display');
 var buttonDisplay = document.getElementById('button-display');
 var clearBtn = document.getElementById('clear');

@@ -12,15 +12,15 @@
       <h2>Which type of message?</h2>
         <section class="selection box">
           <form>
-              <input type="radio" id="affirmation" name="message" value="affirmation">
+              <input type="radio" id="affirmation">
               <label for="affirmation">affirmation</label>
-              <input type="radio" id="mantra" name="message" value="mantra">
+              <input type="radio" id="mantra">
               <label for="mantra">mantra</label>
           </form>
             <p class ="error hidden" id="error">Oops! Please make selection.</p>
-            <button class="message-btn">Receive Message</button>
+            <button class="message-btn" id="submit">Receive Message</button>
         </section>
-        <section class="message box">
+        <section class="message box" id="message-box">
           <article class="display" id="message-display">
             <img class="bell" src="assets/meditate.svg" alt="Meditate bell">
           </article>
