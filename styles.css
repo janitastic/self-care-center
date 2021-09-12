@@ -33,16 +33,11 @@ h2 {
 .box {
   background-color: #fff;
   border-radius: 10px;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap; */
   align-items: center;
   align-content: space-between;
 }
 
 .selection {
-  /* display: grid; */
-  /* background-color: #fff; */
   height: 60%;
   width: 40%;
   margin-bottom: 10%;
@@ -119,10 +114,13 @@ form {
   align-content: center;
 }
 
-.option {
-  font-size: 95%;
+@media (max-width: 768px){
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 2% 10%;
+    justify-content: flex-start;
+  }
 }
-
-/* .radio {
-  margin: 5%
-} */
