@@ -1,7 +1,7 @@
 // Variables
 
-var affirmationSelection = document.getElementById('affirmation');
-var mantraSelection = document.getElementById('mantra');
+var affirmationRadio = document.getElementById('affirmation');
+var mantraRadio = document.getElementById('mantra');
 var messageBtn = document.querySelector('.message-btn');
 var message = document.querySelector('.message');
 
@@ -14,10 +14,12 @@ function getRandomIndex(array) {
 }
 
 function showMessage() {
-  if (affirmationSelection.checked) {
-    randomAffirmation();
-  } else if (mantraSelection.checked) {
-    randomMantra();
+  if (affirmationRadio.checked) {
+    displayAffirmation();
+    affirmationRadio.checked = false;
+  } else if (mantraRadio.checked) {
+    displayMantra();
+    mantraRadio.checked = false;
   }
 }
 
